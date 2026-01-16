@@ -6,6 +6,10 @@ pipeline {
     IMAGE_TAG = "latest"
   }
 
+  tools {
+    maven 'M3'
+  }
+
   stages {
 
     stage('Checkout Code') {
